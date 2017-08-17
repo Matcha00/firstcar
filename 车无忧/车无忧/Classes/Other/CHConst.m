@@ -1,0 +1,28 @@
+#import <UIKit/UIKit.h>
+
+
+CGFloat const CHTitilesViewH = 35;
+CGFloat const CHTitilesViewY = 64;
+
+
+CGFloat const CHTopicCellMargin = 10;
+
+CGFloat const CHTopicCellTextY = 55;
+
+CGFloat const CHTopicCellBottomBarH = 44;
+
+CGFloat const CHTopicCellPictureMaxH = 1000;
+
+CGFloat const CHTopicCellPictureBreakH = 250;
+
+NSString * const CHUserSexMale = @"m";
+NSString * const CHUserSexFemale = @"f";
+NSString * const CHUrl = @"http://www.zhanyiwangluo.com/washcar/index.php/Home/";
+
+CGFloat const CHTopicCellTopCmtTitleH = 20;
+
+NSString * const CHTabBarDidSelectNotification = @"CHTabBarDidSelectNotification";
+
+CGFloat const CHTagMargin = 5;
+
+CGFloat const CHTagH = 25;

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Waller View Controller-->
+        <scene sceneID="62X-IH-lII">
+            <objects>
+                <viewController storyboardIdentifier="CWYWallerViewController" id="G3f-cS-NUG" customClass="CWYWallerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GnV-5v-hgy"/>
+                        <viewControllerLayoutGuide type="bottom" id="cKE-2P-ZJN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0ke-fz-gnX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qian" translatesAutoresizingMaskIntoConstraints="NO" id="Eyc-fa-UZr">
+                                <rect key="frame" x="132" y="100" width="110" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="945-tc-3V5"/>
+                                    <constraint firstAttribute="height" constant="120" id="dEI-Ie-ZPG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的余额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgm-4i-V87">
+                                <rect key="frame" x="158" y="240" width="57.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57.5" id="GvN-dK-B0F"/>
+                                    <constraint firstAttribute="height" constant="21" id="MGr-FQ-o1o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xc6-DQ-lBw">
+                                <rect key="frame" x="188" y="269" width="0.0" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="8Hh-xv-efY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3IL-Qe-LZD">
+                                <rect key="frame" x="20" y="389" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.97938734292984009" green="0.18763953447341919" blue="0.18711209297180176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="i01-Zl-jgY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="购买充值卡">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="recharge" destination="G3f-cS-NUG" eventType="touchUpInside" id="Keq-U0-b8T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fgm-4i-V87" firstAttribute="centerX" secondItem="0ke-fz-gnX" secondAttribute="centerX" id="DIK-sI-ElB"/>
+                            <constraint firstItem="3IL-Qe-LZD" firstAttribute="leading" secondItem="0ke-fz-gnX" secondAttribute="leading" constant="20" id="E1F-cj-OBo"/>
+                            <constraint firstAttribute="trailing" secondItem="3IL-Qe-LZD" secondAttribute="trailing" constant="20" id="IgL-Le-mfj"/>
+                            <constraint firstItem="fgm-4i-V87" firstAttribute="top" secondItem="Eyc-fa-UZr" secondAttribute="bottom" constant="20" id="Kyn-pV-pXc"/>
+                            <constraint firstItem="3IL-Qe-LZD" firstAttribute="top" secondItem="Xc6-DQ-lBw" secondAttribute="bottom" constant="100" id="Nk6-bd-p2f"/>
+                            <constraint firstItem="Xc6-DQ-lBw" firstAttribute="top" secondItem="fgm-4i-V87" secondAttribute="bottom" constant="8" id="fdb-QD-oaR"/>
+                            <constraint firstItem="Xc6-DQ-lBw" firstAttribute="centerX" secondItem="0ke-fz-gnX" secondAttribute="centerX" id="jWD-bi-GdH"/>
+                            <constraint firstItem="Eyc-fa-UZr" firstAttribute="top" secondItem="GnV-5v-hgy" secondAttribute="bottom" constant="80" id="pWo-13-gsX"/>
+                            <constraint firstItem="3IL-Qe-LZD" firstAttribute="centerX" secondItem="0ke-fz-gnX" secondAttribute="centerX" id="rtf-Go-ZKI"/>
+                            <constraint firstItem="Eyc-fa-UZr" firstAttribute="centerX" secondItem="0ke-fz-gnX" secondAttribute="centerX" id="xol-0Y-BiL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="yueLable" destination="Xc6-DQ-lBw" id="5m1-Ah-wpH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P9f-Rn-TBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.599999999999994" y="127.28635682158921"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="qian" width="74" height="105"/>
+    </resources>
+</document>

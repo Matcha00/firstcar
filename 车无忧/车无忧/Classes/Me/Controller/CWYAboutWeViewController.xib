@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CWYAboutWeViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about_me" translatesAutoresizingMaskIntoConstraints="NO" id="s1z-f8-pZA">
+                    <rect key="frame" x="137" y="150" width="100" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="ekq-w1-FpC"/>
+                        <constraint firstAttribute="width" constant="100" id="xo9-bk-BA5"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一款不让您为爱车保养而发愁的app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ex-Hr-Trq">
+                    <rect key="frame" x="75.5" y="258" width="224.5" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="lNb-9T-XXY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.38437235355377197" green="0.38040202856063843" blue="0.38029646873474121" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright 2016-2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiH-CO-nsf">
+                    <rect key="frame" x="115" y="353" width="146" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="T9w-Lz-3bc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.61572152376174927" green="0.61178833246231079" blue="0.61164313554763794" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="黑龙江微宝网络科技有限公司" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwd-rF-Unq">
+                    <rect key="frame" x="88" y="378" width="199" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Cbg-Xs-TDQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.63532733917236328" green="0.6313973069190979" blue="0.63124871253967285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.90186256170272827" green="0.90201735496520996" blue="0.90185278654098511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fwd-rF-Unq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1kv-OB-zMI"/>
+                <constraint firstItem="s1z-f8-pZA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="150" id="5Cs-HL-4VI"/>
+                <constraint firstItem="xiH-CO-nsf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MBl-bW-eus"/>
+                <constraint firstItem="s1z-f8-pZA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fah-03-Kfe"/>
+                <constraint firstItem="8Ex-Hr-Trq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ftQ-K7-53u"/>
+                <constraint firstItem="8Ex-Hr-Trq" firstAttribute="top" secondItem="s1z-f8-pZA" secondAttribute="bottom" constant="33" id="hJx-aJ-eAX"/>
+                <constraint firstItem="fwd-rF-Unq" firstAttribute="top" secondItem="xiH-CO-nsf" secondAttribute="bottom" constant="5" id="q1I-ga-4Yu"/>
+                <constraint firstItem="xiH-CO-nsf" firstAttribute="top" secondItem="8Ex-Hr-Trq" secondAttribute="bottom" constant="75" id="siL-8D-liv"/>
+            </constraints>
+            <point key="canvasLocation" x="64.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="about_me" width="194" height="150"/>
+    </resources>
+</document>
